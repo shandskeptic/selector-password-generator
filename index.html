@@ -43,12 +43,19 @@
 					</div>
 					<input class="form-control form-control-lg" id="password" disabled />
 					<button class="btn btn-dark text-uppercase fw-bold btn-lg" onclick="getPassword()">Generate</button>
-					<div class="d-inline flex-row justify-content-center gap-2">
-						<div class="tooltip">
-							<button onclick="copyPassword()" onmouseout="outFunc()" class="btn btn-success text-uppercase fw-bold btn-lg">Copy text</button>
-							<span class="tooltiptext bg-success" id="myTooltip">Copy to clipboard</span>
+
+					<div class="text-center">
+						<div class="row row-cols-auto gap-2">
+							<div class="btnCopyM col">
+								<a class="btnCopyM btn btn-primary text-uppercase fw-bold btn-lg" onclick="savePassword()" id="saveButton">Save Password</a>
+							</div>
+							<div class="btnCopyM col">
+								<div class="tooltip">
+									<button onclick="copyPassword()" onmouseout="outFunc()" class="btnCopy btn btn-success text-uppercase fw-bold btn-lg">Copy text</button>
+									<span class="tooltiptext bg-success" id="myTooltip">Copy to clipboard</span>
+								</div>
+							</div>
 						</div>
-						<a class="btn btn-primary text-uppercase fw-bold btn-lg" onclick="savePassword()" id="saveButton">Save Password</a>
 					</div>
 				</div>
 			</div>

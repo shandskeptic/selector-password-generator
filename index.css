@@ -3,6 +3,7 @@
 	display: inline-block;
 	opacity: 100;
 	--bs-tooltip-arrow-height: 0;
+	width: 100%;
 }
 
 .tooltip .tooltiptext {
@@ -35,4 +36,17 @@
 .tooltip:hover .tooltiptext {
 	visibility: visible;
 	opacity: 1;
+}
+
+.btnCopy {
+	width: 100%;
+}
+
+@media (max-width: 576px) {
+	.btnCopyM {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
 }
